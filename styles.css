@@ -1,8 +1,9 @@
 body{
-  background-color: black;
+  background-color: rgb(190,190,190);
 }
 h1{
   background-color: white;
+  width: 100;
 }
 h3{
   color: white;
@@ -11,5 +12,5 @@ a{
   color: white;
 }
 p{
-  color: black;
+  color: white;
 }
