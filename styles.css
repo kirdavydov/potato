@@ -2,11 +2,14 @@ body{
   background-color: black;
 }
 h1{
-  color: white;
+  background-color: white;
 }
 h3{
   color: white;
 }
 a{
   color: white;
+}
+p{
+  color: black;
 }
