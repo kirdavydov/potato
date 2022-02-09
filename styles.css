@@ -5,8 +5,9 @@ body{
 h1{
   color: white;
   background-color: rgb(20,20,30);
+  font-size: 1625%;
   display:inline;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 h3{
   color: white;
