@@ -5,6 +5,7 @@ body{
 h1{
   color: white;
   background-color: rgb(20,20,30);
+  border-radius: 7px;
   display: inline;
 }
 h3{
@@ -30,9 +31,14 @@ p{
 }
 #sidebar{
   border-right: 3px solid rgb(10,10,30);
-  height: 600px;
+  width: 238px;
+  height: 700px;
 }
 #heading{
   border-bottom: 3px solid rgb(10,10,30);
   border-radius: 0px;
+}
+#content{
+  left: 315px;
+  top: 232px;
 }
