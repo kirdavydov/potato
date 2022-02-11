@@ -30,9 +30,7 @@ p{
   position: absolute;
 }
 #sidebar{
-  border-right: 3px solid rgb(10,10,30);
   width: 238px;
-  height: 700px;
 }
 #heading{
   border-bottom: 3px solid rgb(10,10,30);
@@ -41,6 +39,8 @@ p{
 #content{
   left: 315px;
   top: 232px;
+  border-left: 3px solid rgb(10,10,30);
+  padding-left: 7px;
 }
 .link{
   font-size: 200%;
