@@ -5,8 +5,8 @@ body{
 h1{
   color: white;
   background-color: rgb(20,20,30);
-  display:inline;
   border-radius: 7px;
+  display: inline;
 }
 h3{
   color: white;
@@ -25,4 +25,23 @@ a{
 }
 p{
   color: rgb(230,230,230);
+}
+#sidebar, #content{
+  position: absolute;
+}
+#sidebar{
+  width: 238px;
+}
+#heading{
+  border-bottom: 3px solid rgb(10,10,30);
+  border-radius: 0px;
+}
+#content{
+  left: 315px;
+  top: 232px;
+  border-left: 3px solid rgb(10,10,30);
+  padding-left: 7px;
+}
+.link{
+  font-size: 200%;
 }
