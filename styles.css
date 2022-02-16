@@ -45,3 +45,7 @@ p{
 .link{
   font-size: 200%;
 }
+#game{
+  background-color: rgb(200, 200, 220);
+  border-radius: 4px;
+}
