@@ -52,6 +52,7 @@ function start(event){
   if(event.keyCode == 32){
     timeLeft = 5;
     score = 0;
+    dir = "";
 
     food = {
       x: Math.floor(Math.random() * 900),
