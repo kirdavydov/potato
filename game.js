@@ -8,8 +8,7 @@ let dir;
 let timeLeft = 6;
 let game;
 let timer;
-let isGameOver = false;
-let toBeat = parseInt(localStorage.toBeat);
+let toBeat = 0;
 
 //defining object images
 const playerImg = new Image();
@@ -48,16 +47,27 @@ ctx.fillText("press space to start", 220, 280);
 
 //if space is pressed the game will start
 document.addEventListener('keydown', start);
+
 function start(event){
-  if(event.keyCode == 32 && isGameOver == true)
-    window.location.reload();
   if(event.keyCode == 32){
+    timeLeft = 5;
+    score = 0;
+
+    food = {
+      x: Math.floor(Math.random() * 900),
+      y: Math.floor(Math.random() * 400)
+    }
+    player = {
+      x: 100,
+      y: 100
+    }
+
     timer = setInterval(timerF, 1000);
     game = setInterval(drawGame, 1);
   }
 }
 
-//defines a countdown timer
+//defines a timer
 function timerF(){
   timeLeft -= 1;
 }
@@ -96,20 +106,26 @@ function drawGame(){
   //displaying the score
   ctx.fillStyle = "black";
   ctx.font = "60px Arial";
+
   ctx.fillText(score, 20, 50);
   ctx.fillText(timeLeft, 950, 50);
+
   ctx.font = "40px Arial";
   ctx.fillText("record: " + toBeat, 390, 40);
 
   //game over
   if(timeLeft <= 0){
+    //writing game over
     ctx.font = "70px Arial";
     ctx.fillText("Game over", 280, 280);
+
+    //finishing the game
     clearInterval(game);
     clearInterval(timer);
-    isGameOver = true;
+
+    // checking if the record was beaten
     if(toBeat < score){
-      localStorage.toBeat = score;
+      toBeat = score;
     }
   }
 }
