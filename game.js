@@ -50,7 +50,7 @@ document.addEventListener('keydown', start);
 
 function start(event){
   if(event.keyCode == 32){
-    timeLeft = 5;
+    timeLeft = 6;
     score = 0;
     dir = "";
 
