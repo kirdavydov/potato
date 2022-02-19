@@ -12,10 +12,10 @@ let toBeat = 0;
 
 //defining object images
 const playerImg = new Image();
-playerImg.src = 'player.png'
+playerImg.src = 'pictures/game/player.png'
 
 const foodImg = new Image();
-foodImg.src = 'potato.png';
+foodImg.src = 'pictures/game/potato.png';
 
 //defining objects
 let player = {
